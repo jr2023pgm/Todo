@@ -9,37 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var todos = [Todo(title: "Feed the cat", isCompleted: true),
-                                Todo(title: "Play with cat"),
-                                Todo(title: "Get allergies"),
-                                Todo(title: "Run away from cat"),
-                                Todo(title: "Get a new cat")]
+    @StateObject var todoManager = TodoManager()
     
     var body: some View {
-        NavigationStack {
-            List($todos, id: \.id) { $todo in
-                NavigationLink {
-                    TodoDetailView(todo: $todo)
-                } label: {
-                    HStack {
-                        Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
-                            .onTapGesture {
-                                todo.isCompleted.toggle()
-                            }
-                        VStack {
-                            Text(todo.title)
-                                .strikethrough(todo.isCompleted)
-                            if !todo.subtitle.isEmpty {
-                                Text(todo.subtitle)
-                                    .font(.footnote)
-                                    .foregroundColor(.gray)
-                                    .strikethrough(todo.isCompleted)
-                            }
-                        }
-                    }
+        TabView{
+            MainTodoListView(todoManager: todoManager)
+                .tabItem {
+                    Label("Todos", systemImage: "checkmark.circle.fill")
                 }
+            
+            HowManyMoreView(todoManager: todoManager)
+                .tabItem {
+                    Label("How many more?", systemImage: "number.circle")
             }
-            .navigationTitle("Todos")
+            
         }
     }
 }

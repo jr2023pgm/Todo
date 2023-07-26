@@ -16,6 +16,11 @@
 		2B3E67072A6BD1AD008F79F1 /* TodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E67062A6BD1AD008F79F1 /* TodoUITestsLaunchTests.swift */; };
 		2B488A492A6CFA15008B3B25 /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B488A482A6CFA15008B3B25 /* TodoDetailView.swift */; };
 		2BCD852D2A6BD32500A8BAA9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD852C2A6BD32500A8BAA9 /* Todo.swift */; };
+		2BE0B7492A6D6EE50036C0CC /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0B7482A6D6EE50036C0CC /* NewTodoView.swift */; };
+		2BE0B74B2A6D79AA0036C0CC /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0B74A2A6D79AA0036C0CC /* TodoManager.swift */; };
+		2BE0B74D2A6E71D60036C0CC /* Todo+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0B74C2A6E71D60036C0CC /* Todo+Sample.swift */; };
+		2BE0B74F2A70D4660036C0CC /* MainTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0B74E2A70D4660036C0CC /* MainTodoListView.swift */; };
+		2BE0B7512A70D46E0036C0CC /* HowManyMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0B7502A70D46E0036C0CC /* HowManyMoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		2B3E67062A6BD1AD008F79F1 /* TodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2B488A482A6CFA15008B3B25 /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 		2BCD852C2A6BD32500A8BAA9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		2BE0B7482A6D6EE50036C0CC /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
+		2BE0B74A2A6D79AA0036C0CC /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
+		2BE0B74C2A6E71D60036C0CC /* Todo+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Sample.swift"; sourceTree = "<group>"; };
+		2BE0B74E2A70D4660036C0CC /* MainTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoListView.swift; sourceTree = "<group>"; };
+		2BE0B7502A70D46E0036C0CC /* HowManyMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyMoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +110,12 @@
 			children = (
 				2B3E66E92A6BD1AB008F79F1 /* TodoApp.swift */,
 				2B3E66EB2A6BD1AB008F79F1 /* ContentView.swift */,
+				2BE0B74C2A6E71D60036C0CC /* Todo+Sample.swift */,
+				2BE0B7482A6D6EE50036C0CC /* NewTodoView.swift */,
 				2B488A482A6CFA15008B3B25 /* TodoDetailView.swift */,
+				2BE0B74A2A6D79AA0036C0CC /* TodoManager.swift */,
+				2BE0B74E2A70D4660036C0CC /* MainTodoListView.swift */,
+				2BE0B7502A70D46E0036C0CC /* HowManyMoreView.swift */,
 				2B3E66ED2A6BD1AC008F79F1 /* Assets.xcassets */,
 				2B3E66EF2A6BD1AC008F79F1 /* Preview Content */,
 				2BCD852C2A6BD32500A8BAA9 /* Todo.swift */,
@@ -264,8 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3E66EC2A6BD1AB008F79F1 /* ContentView.swift in Sources */,
+				2BE0B74B2A6D79AA0036C0CC /* TodoManager.swift in Sources */,
+				2BE0B7512A70D46E0036C0CC /* HowManyMoreView.swift in Sources */,
+				2BE0B74D2A6E71D60036C0CC /* Todo+Sample.swift in Sources */,
+				2BE0B74F2A70D4660036C0CC /* MainTodoListView.swift in Sources */,
 				2BCD852D2A6BD32500A8BAA9 /* Todo.swift in Sources */,
 				2B3E66EA2A6BD1AB008F79F1 /* TodoApp.swift in Sources */,
+				2BE0B7492A6D6EE50036C0CC /* NewTodoView.swift in Sources */,
 				2B488A492A6CFA15008B3B25 /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
